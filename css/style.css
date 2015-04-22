@@ -52,7 +52,7 @@ body { background: #e8e8e8; }
 .frame ul li.active {
     color: #fff;
     background: #333;
-    display: block;7
+    display: block;
     position: relative;
 }
 
@@ -239,8 +239,8 @@ cursor: pointer;
 
 }
 .button_imicare{
-    padding-left: 939px;
-    top: 55%;
+  top: 55%;
+  right: 0;
 }
 .btn_ver_estudo{
     top: 50%;
