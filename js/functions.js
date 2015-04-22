@@ -50,6 +50,14 @@ jQuery(function($){
 });
 
 
+$(window).resize(function () { 
+
+  	var sly = $('#slider-medinfer').data('sly');
+	sly.reload();
+
+ });
+
+
 function show_menu(){
 	document.getElementById("menu").className += " open";
 }

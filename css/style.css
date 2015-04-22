@@ -48,6 +48,7 @@ body { background: #e8e8e8; }
     color: #ddd;
     cursor: pointer;
     width: 100vw;
+    position: relative;
 }
 .frame ul li.active {
     color: #fff;
@@ -408,5 +409,7 @@ overflow: hidden;
       -ms-animation-delay: .2s;
       animation-delay: .2s;
     }
-}
 
+img {
+    max-width: 100%;
+}
