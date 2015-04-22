@@ -196,6 +196,7 @@ body { background: #e8e8e8; }
     top: 82%;
     position: absolute;
     margin-left: 95px;
+    z-index: 3;
 }
 .btn_imicare_3{
     padding-left: 450px;
@@ -326,17 +327,29 @@ li.active img:nth-child(10){
     top: 12%;
     padding-left: 905px;
 }
-.container{
-    height: 100vh;
-    box-sizing: border-box;
-    padding: 70px 70px 0 70px;x;
+.rcm_container{
+position: fixed;
+top: 0;
+left: 0;
+height: 768px;
+width: 1024px;
+visibility: hidden;
+padding: 50px 0 0 0;
+overflow: hidden;
 }
-.rcm_container.rcm_1{
+.show{
+    visibility: visible;
+}
+.rcm_1{
     background-image: url('../img/pages/app1/imicare/rcm/bg.jpg');
     padding: 50px;
 }
-.rcm_container.rcm_2{
-    background-image: url('../img/pages/app1/imicare/rcm/bg_2.jpg');
+.rcm_2{
+    background-image: url('../img/pages/app1/acne/bg_rcm1.jpg');
+    padding: 50px;
+}
+.rcm_3{
+    background-image: url('../img/pages/app1/acne/bg_rcm2.jpg');
     padding: 50px;
 }
 .rcm_box{
@@ -347,9 +360,16 @@ li.active img:nth-child(10){
     color: #2c7eb0;
     background-color: white;
     box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding: 50px 30px 25px 30px;
+    width: 90%;
+    height: 90%;
+    background: white;
+    padding: 50px 20px 10px 20px;
+}
+.rcm_cross{
+    position: relative;
+    top: -80px;
+    right: -50px;
+    cursor: pointer;
 }
 .rcm_box p{
     padding-top: 30px;
