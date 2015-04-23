@@ -396,12 +396,7 @@ overflow: hidden;
     top:42%;
     padding-left: 598px;
 }
-.rcm_trico{
-    background-image: url('../img/pages/app2/tricovivax/rcm_1.jpg');
-}
-.rcm_verru{
-    background-image: url('../img/pages/app2/verrucare/rcm_2.jpg');
-}
+
 .texto{
     -webkit-animation-delay: .2s !important;
       -moz-animation-delay: .2s;
