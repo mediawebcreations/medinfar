@@ -234,13 +234,16 @@ body { background: #e8e8e8; }
 }
 
 .menu_btn img{
-/*  width: 35px;
-height: 35px;*/
 position: absolute;
 z-index: 9;
 padding: 15px;
 cursor: pointer;
 
+}
+svg{
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
 }
 .button_imicare{
   top: 55%;
