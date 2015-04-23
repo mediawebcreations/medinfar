@@ -132,7 +132,10 @@ body { background: #e8e8e8; }
 .open {
     left: 0;
 }
-
+.btn-menu{
+    height: 75px;
+    width:75px;
+}
 .controls {
     position: fixed;
     bottom: 0;
