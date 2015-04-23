@@ -89,3 +89,19 @@ $( ".menu ul li" ).click(function() {
   	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
 
 });
+$( ".menu ul li" ).click(function() {
+  	$( ".menu" ).removeClass( "open" );
+  	$(this).addClass('active').siblings().removeClass('active');
+  	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
+
+});
+
+$.lista = $('.frame ul li').length;
+$.count= 0;
+$( '.frame ul li' ).each(function() {
+	$.count= $.count + 1;
+	if ($.count <= 6) {
+		$( '#circle' ).css("fill: cyan;");
+	};
+   console.log($.count);
+  });

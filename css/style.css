@@ -245,6 +245,12 @@ svg{
     z-index: 2;
     cursor: pointer;
 }
+#circle{
+    fill:red;
+}
+path{
+    fill: #fff;
+}
 .button_imicare{
   top: 55%;
   right: 0;
