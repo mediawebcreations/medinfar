@@ -95,17 +95,19 @@ $( ".menu ul li" ).click(function() {
   	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
 
 });
-var teste = $.teste = 0;
-	$(".frame ul li").each(function() {
-		teste = teste +1;
-		console.log(teste);
-			$(this).attr("id", teste);
+	$.teste= 0;
+		$(".frame ul li").each(function(){
+			$.teste = $.teste +1;
+			$(this).addClass(" " + $.teste);
+			console.log($.teste);
 
-	      });
+		});
 
-	if (($(".frame ul li").attr("id") == 10) && $(".frame ul li").hasClass("active") ) {
-		alert("id = 10");
-	};
+				
+				
+
+
+
 
 
 
