@@ -17,7 +17,7 @@ jQuery(function($){
 			activateMiddle: 1,
 			mouseDragging: 1,
 			touchDragging: 1,
-			releaseSwing: 1,
+			releaseSwing: false,
 			startAt: 0,
 			scrollBy: 1,
 			speed: 800,
@@ -95,13 +95,17 @@ $( ".menu ul li" ).click(function() {
   	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
 
 });
+var teste = $.teste = 0;
+	$(".frame ul li").each(function() {
+		teste = teste +1;
+		console.log(teste);
+			$(this).attr("id", teste);
 
-$.lista = $('.frame ul li').length;
-$.count= 0;
-$( '.frame ul li' ).each(function() {
-	$.count= $.count + 1;
-	if ($.count <= 6) {
-		$( '#circle' ).css("fill: cyan;");
+	      });
+
+	if (($(".frame ul li").attr("id") == 10) && $(".frame ul li").hasClass("active") ) {
+		alert("id = 10");
 	};
-   console.log($.count);
-  });
+
+
+
