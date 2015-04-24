@@ -9,10 +9,9 @@ jQuery(function($){
 		var $frame = $('#slider-medinfer');
 		var $wrap  = $frame.parent();
 
-		
-		var sly = new Sly('#slider-medinfer', 
-        {
-            horizontal: 1,
+		// Call Sly on frame
+		$frame.sly({
+			horizontal: 1,
 			itemNav: 'forceCentered',
 			smart: 1,
 			activateMiddle: 1,
@@ -28,15 +27,17 @@ jQuery(function($){
 			dragHandle: 1,
 			dynamicHandle: 1,
 			clickBar: 1,
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 
 			// Buttons
 			prev: $wrap.find('.prev'),
 			next: $wrap.find('.next')
-        });
-          
 
-        sly.init(); 
+
+		});
 
 
 		// To Center button
@@ -45,28 +46,23 @@ jQuery(function($){
 			// If no item is provided, the whole content will be animated.
 			sly.toCenter($(this).attr('data-item'));
 		});
+		
+		    
 
-		 sly.on('change', function (eventName) {
-                
-                //console.log(eventName); // 
-                //console.log(this.rel.activeItem);
-                //console.log($(".active").attr("cor"));
-                // change color svg
-                $(".menu_btn svg path").attr("fill", $(".active").attr("cor"));
-        });
-
-		 $(window).resize(function () { 
-			sly.reload();
-		 });
 
 
 	}());
-
+			
 
 });
 
 
+$(window).resize(function () { 
 
+  	var sly = $('#slider-medinfer').data('sly');
+	sly.reload();
+
+ });
 
 
 
@@ -100,8 +96,6 @@ $( ".menu ul li" ).click(function() {
   	$(this).addClass('active').siblings().removeClass('active');
   	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
 
-
-
 });
 $( ".menu ul li" ).click(function() {
   	$( ".menu" ).removeClass( "open" );
@@ -109,7 +103,11 @@ $( ".menu ul li" ).click(function() {
   	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
 
 });
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> origin/master
 				
 				
 
