@@ -35,10 +35,16 @@ jQuery(function($){
 			next: $wrap.find('.next')
         });
           
+		// To Center button
 
         sly.init(); 
 
-
+        $wrap.find('.toCenter').on('click', function () {
+        	var item = $(this).data('item');
+        	// Animate a particular item to the center of the frame.
+        	// If no item is provided, the whole content will be animated.
+        	$frame.sly('toCenter', item);
+        });
 
 
 		 sly.on('change', function (eventName) {
