@@ -23,12 +23,12 @@ jQuery(function($){
 			scrollBy: 1,
 			speed: 800,
 			swingSpeed: 0.2,
-			elasticBounds: 1,
+			elasticBounds: 0,
 			easing: 'easeOutExpo',
 			dragHandle: 1,
 			dynamicHandle: 1,
 			clickBar: 1,
-			moveBy: 3000, 
+
 
 			// Buttons
 			prev: $wrap.find('.prev'),
@@ -41,10 +41,9 @@ jQuery(function($){
 
 		// To Center button
 		$wrap.find('.toCenter').on('click', function () {
-			var item = $(this).data('item');
 			// Animate a particular item to the center of the frame.
 			// If no item is provided, the whole content will be animated.
-			$frame.sly('toCenter', item);
+			sly.toCenter($(this).attr('data-item'));
 		});
 
 		 sly.on('change', function (eventName) {
@@ -65,6 +64,7 @@ jQuery(function($){
 
 
 });
+
 
 
 
@@ -109,13 +109,6 @@ $( ".menu ul li" ).click(function() {
   	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
 
 });
-	$.teste= 0;
-		$(".frame ul li").each(function(){
-			$.teste = $.teste +1;
-			$(this).addClass(" " + $.teste);
-			console.log($.teste);
-
-		});
 
 				
 				
