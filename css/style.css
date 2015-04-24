@@ -245,12 +245,7 @@ svg{
     z-index: 2;
     cursor: pointer;
 }
-.red{
-    fill:red;
-}
-.green{
-    fill: green;
-}
+
 .button_imicare{
   top: 55%;
   right: 0;
