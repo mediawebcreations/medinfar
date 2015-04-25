@@ -53,6 +53,7 @@ jQuery(function($){
                 //console.log($(".active").attr("cor"));
                 // change color svg
                 $(".menu_btn svg path").attr("fill", $(".active").attr("cor"));
+                $(".menu_btn_close svg path").attr("fill", $(".active").attr("cor"));
         });
 
 		 $(window).resize(function () { 
@@ -88,6 +89,10 @@ function show_rcm_mino(){
 }
 function hide_rcm_mino(){
 	document.getElementById("rcm_mino").className = "rcm_container";
+}
+
+function closeWin() {
+    window.close();   // Closes the new window
 }
 
 $( ".menu ul li" ).click(function() {

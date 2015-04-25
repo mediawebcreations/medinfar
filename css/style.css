@@ -1,4 +1,4 @@
-body { background: #e8e8e8; }
+body { background: #e8e8e8; overflow: hidden;}
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -141,6 +141,13 @@ body { background: #e8e8e8; }
     bottom: 0;
     width: 221px;
     background-color: #ffffff;
+}
+
+.menu_btn_close {
+    position: absolute;
+    right: 0;
+    width: 110px;
+    height: 100px;
 }
 
 .controls .btn {
