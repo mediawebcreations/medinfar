@@ -105,20 +105,40 @@ $( ".menu ul li" ).click(function() {
   	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
 
 });
-$( "#acne" ).click(function() {
-	$( "#acne .imgs" ).addClass( "animated fadeIn" );
-	$( "#acne .imgs" ).removeClass( "imgs-hide" );
-
-
-
-});
-
-
-				
-				
 
 
 
 
 
 
+for(var id = 0; id < 3; id++) {
+	console.log(id);
+    
+  }
+
+
+
+        // $( "#acne" ).click(function() {
+        // 			$( "#caixa_1" ).removeClass( "imgs-hide" );
+        // 			$( "#caixa_1" ).addClass( "animated fadeIn" );
+        // 			$("#acne").addClass("1");
+        // 			$( "#rcm_1" ).removeClass( "imgs-hide" );
+        // 			$( "#rcm_1" ).addClass( "animated fadeIn" );
+        // 			var teste = 1;
+        // 		});
+
+
+        // if ($("#acne").hasClass("1")) {
+        // 	$( "#acne" ).click(function() {
+        // 				$( "#caixa_2" ).removeClass( "imgs-hide" );
+        // 				$( "#caixa_2" ).addClass( "animated fadeIn" );
+        // 				$( "#rcm_2" ).removeClass( "imgs-hide" );
+        // 				$( "#rcm_2" ).addClass( "animated fadeIn" );
+        // 				teste = 2;
+        // 				console.log(teste);
+        // 			});
+
+
+        // };
+       
+// $( "#acne .imgs" ).removeClass( "imgs-hide" );
