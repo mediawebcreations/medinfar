@@ -444,3 +444,21 @@ z-index: 9;
       -ms-animation-delay: 3.5s;
       animation-delay: 3.5s;
 }
+.caixa1{
+    position: absolute;
+    top: 43%;
+    left: 6%;
+}
+.caixa2{
+    position: absolute;
+      top: 43%;
+      left: 37%;
+}
+.caixa3{
+    position: absolute;
+    top: 42%;
+    left: 68%;
+}
+.imgs-hide{
+    visibility: hidden !important;
+}

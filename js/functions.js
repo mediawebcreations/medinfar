@@ -48,12 +48,10 @@ jQuery(function($){
 
 		 sly.on('change', function (eventName) {
                 
-                //console.log(eventName); // 
-                //console.log(this.rel.activeItem);
-                //console.log($(".active").attr("cor"));
-                // change color svg
                 $(".menu_btn svg path").attr("fill", $(".active").attr("cor"));
                 $(".menu_btn_close svg path").attr("fill", $(".active").attr("cor"));
+                $( "#acne .imgs" ).removeClass( "animated fadeIn" );
+                $( "#acne .imgs" ).addClass( "imgs-hide" );
         });
 
 		 $(window).resize(function () { 
@@ -107,6 +105,14 @@ $( ".menu ul li" ).click(function() {
   	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
 
 });
+$( "#acne" ).click(function() {
+	$( "#acne .imgs" ).addClass( "animated fadeIn" );
+	$( "#acne .imgs" ).removeClass( "imgs-hide" );
+
+
+
+});
+
 
 				
 				
