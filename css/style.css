@@ -1,4 +1,4 @@
-body { background: #e8e8e8; overflow: hidden;}
+body { background: #e8e8e8; }
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -73,12 +73,12 @@ body { background: #e8e8e8; overflow: hidden;}
     visibility: visible;
 }
 
-.frame ul li img {
+.frame ul li img, .frame ul li a {
     position: absolute;
     opacity: 0;
 }
 
-.frame ul li img:first-child {
+.frame ul li>img:first-child {
     opacity: 1;
 }
 
@@ -251,6 +251,8 @@ svg{
     position: absolute;
     z-index: 2;
     cursor: pointer;
+    width: 100px;
+    height: 100px;
 }
 
 .button_imicare{
@@ -352,6 +354,7 @@ width: 1024px;
 visibility: hidden;
 padding: 50px 0 0 0;
 overflow: hidden;
+z-index: 9;
 }
 .show{
     visibility: visible;
@@ -418,3 +421,26 @@ overflow: hidden;
       -ms-animation-delay: .2s;
       animation-delay: .2s;
     }
+
+.delay2 {
+    -webkit-animation-delay: 2s !important;
+      -moz-animation-delay: 2s;
+      -o-animation-delay: 2s;
+      -ms-animation-delay: 2s;
+      animation-delay: 2s;
+}
+
+.delay3 {
+    -webkit-animation-delay: 4s !important;
+      -moz-animation-delay: 4s;
+      -o-animation-delay: 4s;
+      -ms-animation-delay: 4s;
+      animation-delay: 4s;
+}
+.delay35 {
+    -webkit-animation-delay: 3.5s !important;
+      -moz-animation-delay: 3.5s;
+      -o-animation-delay: 3.5s;
+      -ms-animation-delay: 3.5s;
+      animation-delay: 3.5s;
+}

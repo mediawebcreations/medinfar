@@ -91,9 +91,9 @@ function hide_rcm_mino(){
 	document.getElementById("rcm_mino").className = "rcm_container";
 }
 
-function closeWin() {
+$( ".menu_btn_close" ).click(function() {
     window.close();   // Closes the new window
-}
+});
 
 $( ".menu ul li" ).click(function() {
   	$( ".menu" ).removeClass( "open" );
