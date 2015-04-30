@@ -107,38 +107,32 @@ $( ".menu ul li" ).click(function() {
 });
 
 
-function caixa1(){
-	$( "#caixa_1" ).removeClass( "imgs-hide" );
-	$( "#caixa_1" ).addClass( "animated fadeIn" );
-	$("#acne").addClass("1");
-	$( "#rcm_1" ).removeClass( "imgs-hide" );
-	$( "#rcm_1" ).addClass( "animated fadeIn" );
-}
-function caixa2(){
-	$( "#caixa_2" ).removeClass( "imgs-hide" );
-	$( "#caixa_2" ).addClass( "animated fadeIn" );
-	$( "#rcm_2" ).removeClass( "imgs-hide" );
-	$( "#rcm_2" ).addClass( "animated fadeIn" );
-}
+var aparecerfoto = 0;
 
-function show(){
-	var count = 3;
-	for (var i = 0; i <= count; i++) {
-			if (i == 1) {
-				caixa1();
-			};
-			if (i == 2) {
-				caixa2();
-			};
-	};
-};
-    
+$( "#acne" ).click(function() {
+	if(aparecerfoto == 0) {
+		$( "#acne .caixa1" ).addClass( "animated fadeIn" );
+		$( "#acne .caixa1" ).removeClass( "imgs-hide" );
+		aparecerfoto ++;
+	} else if (aparecerfoto == 1) {
+		$( "#acne .caixa2" ).addClass( "animated fadeIn" );
+		$( "#acne .caixa2" ).removeClass( "imgs-hide" );
+		aparecerfoto ++;
+	} else if (aparecerfoto == 2){
+		$( "#acne .caixa3" ).addClass( "animated fadeIn" );
+		$( "#acne .caixa3" ).removeClass( "imgs-hide" );
+		aparecerfoto ++;
+	}
+
+
+});
+
+
+				
+				
 
 
 
 
 
 
-
-       
-// $( "#acne .imgs" ).removeClass( "imgs-hide" );

@@ -422,6 +422,15 @@ z-index: 9;
       animation-delay: .2s;
     }
 
+.no-delay {
+    -webkit-animation-delay: 0s !important;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      -ms-animation-delay: 0s;
+      animation-delay: 0s;
+}
+
+
 .delay2 {
     -webkit-animation-delay: 2s !important;
       -moz-animation-delay: 2s;
