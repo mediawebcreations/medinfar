@@ -111,16 +111,16 @@ var aparecerfoto = 0;
 
 $( "#acne" ).click(function() {
 	if(aparecerfoto == 0) {
-		$( "#acne .caixa1" ).addClass( "animated fadeIn" );
-		$( "#acne .caixa1" ).removeClass( "imgs-hide" );
+		$( "#acne .item1" ).addClass( "animated fadeIn" );
+		$( "#acne .item1" ).removeClass( "imgs-hide" );
 		aparecerfoto ++;
 	} else if (aparecerfoto == 1) {
-		$( "#acne .caixa2" ).addClass( "animated fadeIn" );
-		$( "#acne .caixa2" ).removeClass( "imgs-hide" );
+		$( "#acne .item2" ).addClass( "animated fadeIn" );
+		$( "#acne .item2" ).removeClass( "imgs-hide" );
 		aparecerfoto ++;
 	} else if (aparecerfoto == 2){
-		$( "#acne .caixa3" ).addClass( "animated fadeIn" );
-		$( "#acne .caixa3" ).removeClass( "imgs-hide" );
+		$( "#acne .item3" ).addClass( "animated fadeIn" );
+		$( "#acne .item3" ).removeClass( "imgs-hide" );
 		aparecerfoto ++;
 	}
 
