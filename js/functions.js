@@ -48,10 +48,20 @@ jQuery(function($){
 
 		 sly.on('change', function (eventName) {
                 
-                $(".menu_btn svg path").attr("fill", $(".active").attr("cor"));
-                $(".menu_btn_close svg path").attr("fill", $(".active").attr("cor"));
-                $( "#acne .imgs" ).removeClass( "animated fadeIn" );
-                $( "#acne .imgs" ).addClass( "imgs-hide" );
+                //console.log(eventName); // 
+                //console.log(this.rel.activeItem);
+                console.log($(".frame .active").attr("cor"));
+                // change color svg
+                $(".menu_btn svg path").attr("fill", $(".frame .active").attr("cor"));
+                $(".menu_btn_close svg path").attr("fill", $(".frame .active").attr("cor"));
+                $("#provivax img#splash").removeClass( "animated bounceInDown" );
+                $("#karez img#caixa-karez").removeClass( "animated bounceInDown" );
+                $("#karez-2 img#caixa-karez2").removeClass( "animated bounceInDown" );
+               	var src = "img/pages/app2/tricovivax/capa/25anos.gif";
+                $("#gif_intro").attr("src", src);
+                var src2 = "img/pages/app2/tricovivax/fecho3/300k.gif";
+                 $("#gif_final").attr("src", src2);	
+
         });
 
 		 $(window).resize(function () { 
@@ -64,31 +74,27 @@ jQuery(function($){
 
 });
 
+
+
 function show_menu(){
 	document.getElementById("menu").className += " open";
 }
 function hide_menu(){
 	document.getElementById("menu").className = "menu";
 }
-function show_rcm_imicare(){
-	document.getElementById("rcm_imicare").className += " rcm_1 show";
-}
-function hide_rcm_imicare(){
-	document.getElementById("rcm_imicare").className = "rcm_container";
-}
-function show_rcm_isotre(){
-	document.getElementById("rcm_isotre").className += " rcm_2 show";
-}
-function hide_rcm_isotre(){
-	document.getElementById("rcm_isotre").className = "rcm_container";
-}
-function show_rcm_mino(){
-	document.getElementById("rcm_mino").className += " rcm_2 show";
-}
-function hide_rcm_mino(){
-	document.getElementById("rcm_mino").className = "rcm_container";
-}
 
+function show_rcm_trico(){
+	document.getElementById("rcm_trico").className += " rcm_1 show";
+}
+function hide_rcm_trico(){
+	document.getElementById("rcm_trico").className = "rcm_container";
+}
+function show_rcm_verru(){
+	document.getElementById("rcm_verru").className += " rcm_2 show";
+}
+function hide_rcm_verru(){
+	document.getElementById("rcm_verru").className = "rcm_container";
+}
 $( ".menu_btn_close" ).click(function() {
     window.close();   // Closes the new window
 });
@@ -96,43 +102,16 @@ $( ".menu_btn_close" ).click(function() {
 $( ".menu ul li" ).click(function() {
   	$( ".menu" ).removeClass( "open" );
   	$(this).addClass('active').siblings().removeClass('active');
-  	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
-
-});
-$( ".menu ul li" ).click(function() {
-  	$( ".menu" ).removeClass( "open" );
-  	$(this).addClass('active').siblings().removeClass('active');
-  	$(".rcm_container").removeClass('rcm_1 rcm_2 rcm_3 show');
+  	$(".rcm_container").removeClass('rcm_1 rcm_2 show');
 
 });
 
-
-var aparecerfoto = 0;
-
-$( "#acne" ).click(function() {
-	if(aparecerfoto == 0) {
-		$( "#acne .item1" ).addClass( "animated fadeIn" );
-		$( "#acne .item1" ).removeClass( "imgs-hide" );
-		aparecerfoto ++;
-	} else if (aparecerfoto == 1) {
-		$( "#acne .item2" ).addClass( "animated fadeIn" );
-		$( "#acne .item2" ).removeClass( "imgs-hide" );
-		aparecerfoto ++;
-	} else if (aparecerfoto == 2){
-		$( "#acne .item3" ).addClass( "animated fadeIn" );
-		$( "#acne .item3" ).removeClass( "imgs-hide" );
-		aparecerfoto ++;
-	}
-
-
+$("li#provivax").click(function(){
+	$("#splash").addClass('animated bounceInDown');
 });
-
-
-				
-				
-
-
-
-
-
-
+$("li#karez").click(function(){
+	$("#caixa-karez").addClass('animated bounceInDown');
+});
+$("li#karez-2").click(function(){
+	$("#caixa-karez2").addClass('animated bounceInDown');
+});
