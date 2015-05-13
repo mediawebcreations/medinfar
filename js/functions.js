@@ -46,6 +46,26 @@ jQuery(function($){
 			sly.toCenter($(this).attr('data-item'));
 		});
 
+		 var aparecerfoto = 0;
+
+		$( "#acne" ).click(function() {
+			if(aparecerfoto == 0) {
+				$( "#acne .item1" ).addClass( "animated fadeIn" );
+				$( "#acne .item1" ).removeClass( "imgs-hide" );
+				aparecerfoto ++;
+			} else if (aparecerfoto == 1) {
+				$( "#acne .item2" ).addClass( "animated fadeIn" );
+				$( "#acne .item2" ).removeClass( "imgs-hide" );
+				aparecerfoto ++;
+			} else if (aparecerfoto == 2){
+				$( "#acne .item3" ).addClass( "animated fadeIn" );
+				$( "#acne .item3" ).removeClass( "imgs-hide" );
+				aparecerfoto ++;
+			}
+
+
+		});
+
 		 sly.on('change', function (eventName) {
                 
                 //console.log(eventName); // 
